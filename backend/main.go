@@ -28,7 +28,8 @@ func enableCORS(next http.Handler) http.Handler {
 
 func main() {
 	// Seed users
-	users := data.SeedUsers(10000)
+	users := data.SeedUsers(20000)
+
 
 	// Create leaderboard service
 	leaderboardService := services.NewLeaderboardService(users)
